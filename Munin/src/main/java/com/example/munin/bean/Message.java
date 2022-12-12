@@ -11,6 +11,6 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Message {
-    public String key;
-    public Object value;
+    private String key;
+    private Object value;
 }

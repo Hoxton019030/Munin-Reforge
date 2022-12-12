@@ -1,5 +1,6 @@
 package com.example.munin.controller;
 
+import com.example.munin.bean.Message;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -21,8 +22,8 @@ class TestControllerTest {
 
     @Test
     void returnTest(){
-        String hello=testController.getHello();
-        assertThat(hello).isEqualTo("hello");
+        Message hello = testController.getHello();
+        assertThat(hello.getValue()).isEqualTo("hello");
 
     }
 
